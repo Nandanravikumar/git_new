@@ -21,12 +21,12 @@
     command: pip3 install docker
 
   - name: stop container
-     command: docker stop first-image
-     ignore_errors: yes
+    command: docker stop first-image
+    ignore_errors: yes
 
   - name: remove container
-     command: docker rm first-image
-     ignore_errors: yes
+    command: docker rm first-image
+    ignore_errors: yes
 
   - name: remove image
     command: docker rmi raghu133/first-image
